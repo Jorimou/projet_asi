@@ -1,0 +1,54 @@
+<body>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+    <a  routerLink="/">  <img src="assets\images\logo.png" class="potite" alt="Ma superbe image" routerLink="/"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/">Accueil</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Ordinateurs
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" routerLink="/ordinateurs/fixes">Ordinateurs fixes</a></li>
+              <li><a class="dropdown-item" routerLink="/ordinateurs/portables">Ordinateurs portables</a></li>
+              <li><a class="dropdown-item" routerLink="/ordinateurs/composants">Composants</a></li>
+              <li><a class="dropdown-item" routerLink="/ordinateurs/peripheriques">Périphériques</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/tablettes">Tablettes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/telephones">Téléphones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/login">Connexion admin</a>
+          </li>
+          <li class="nav-item">
+            <a hidden class="nav-link" routerLink="/ajouter">Ajouter</a>
+          </li>
+          <li class="nav-item">
+            <a hidden class="nav-link" routerLink="/supprimer">Supprimer</a>
+          </li>
+          <li class="nav-item">
+            <a hidden class="nav-link" routerLink="/update">Update</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+
+</body>

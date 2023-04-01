@@ -18,6 +18,7 @@ import { SupprimerComponent } from './supprimer/supprimer.component';
 import { UpdateComponent } from './update/update.component';
 import { AjoutCComponent } from './CRUD/ajout-c/ajout-c.component';
 import { AjoutPComponent } from './CRUD/ajout-p/ajout-p.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { AjoutPComponent } from './CRUD/ajout-p/ajout-p.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

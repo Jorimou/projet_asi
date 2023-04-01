@@ -4,10 +4,12 @@
 <div class="overlay">
   <div class="wrap">
     <br>
-   <h1>Ajouter</h1>
-<input type="text" placeholder="Nom Produit">
-<input type="text"placeholder="Catégorie">
+  <h1>Ajouter</h1>
+   <form>
+    <input type="text" placeholder="Nom Produit" [(ngModel)]="Produit.NomProd">
+    <input type="text"placeholder="Catégorie">
     <input type="submit" value="Ajouter">
+  </form>
     <a href="#"><i class="fa fa-question"></i>Forgotten Password</a>
     <a href="#"><i class="fa fa-user"></i>Create an Account</a>
   </div>

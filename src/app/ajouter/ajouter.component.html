@@ -5,9 +5,9 @@
   <div class="wrap">
     <br>
   <h1>Ajouter</h1>
-   <form>
-    <input type="text" placeholder="Nom Produit" [(ngModel)]="Produit.NomProd">
-    <input type="text"placeholder="Catégorie">
+   <form (ngSubmit)="Sendata(Formaj)" #Formaj="ngForm">
+     <input type="text" placeholder="Nom Produit" [(ngModel)]="produit.NomProd" name ="Prod">
+     <input type="text"placeholder="Catégorie" [(ngModel)]="produit.NomCat" name ="Catego">
     <input type="submit" value="Ajouter">
   </form>
     <a href="#"><i class="fa fa-question"></i>Forgotten Password</a>
